@@ -1,0 +1,33 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slideshow{
+    width:350px;
+    height:350px;
+
+}
+img{
+    height:100%;
+    width:100%;
+    object-fit:cover;
+    animation : reveal 1s infinite;
+    }
+    @keyframes reveal {
+        0%{
+            opacity:0.1 ;
+            
+        }
+        100%{
+            opacity:1;
+            
+        }
+     }
+

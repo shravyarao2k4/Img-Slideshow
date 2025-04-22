@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>img_slideshow</title>
+    <link href="img-slideshow.css" rel="stylesheet">
+</head>
+<body>
+    <div class="slideshow">
+     <img src="./pic1.jpg" class="img"> 
+
+    </div>
+    <script>
+        let imgEle = document.querySelector('.img');
+        let arrimg = ["./pic2.jpg","./pic3.jpeg","./pic4.jpg","./pic5.jpg","./pic1.jpg"]
+        let i=0;
+        setInterval(()=>{
+        imgEle.src=arrimg[i];
+        i++;
+        if(i==arrimg.length){
+            i=0;
+        }
+        },1000)
+     
+        
+
+
+    </script>
+
+    
+</body>
+</html>
